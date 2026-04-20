@@ -29,8 +29,10 @@
   <test_depend>ament_cmake_pytest</test_depend>
 
   <depend>joint_state_publisher_gui</depend>
-  <depend>ros_gz</depend>
-  <depend>realsense2_description</depend>
+  <!-- ros_gz: not available on ARM64/Humble (Gazebo Garden not released for ARM64) -->
+  <!-- <depend>ros_gz</depend> -->
+  <!-- realsense2_description: not in apt repos; RealSense SDK is installed manually -->
+  <!-- <depend>realsense2_description</depend> -->
   <exec_depend>xacro</exec_depend>
   <exec_depend>rviz2</exec_depend>
 
